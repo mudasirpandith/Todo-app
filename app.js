@@ -28,6 +28,6 @@ app.post('/',(req,res)=>{
    res.redirect('/');
 })
 
-app.listen(7300,function(){
+app.listen(process.env.PORT||7300,function(){
   console.log("http://localhost:7300");
 });
